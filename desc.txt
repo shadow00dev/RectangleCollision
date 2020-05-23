@@ -1,0 +1,1 @@
+this is a python library that can check for rectangle collision between object 1 and 2

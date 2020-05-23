@@ -3,8 +3,7 @@ this is a rectangle collision for python
 
 #how to install
 
-....
-
+pip install RectangleCollision
 
 #how does this work
 

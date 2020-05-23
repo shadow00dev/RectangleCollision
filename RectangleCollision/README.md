@@ -1,4 +1,4 @@
-# rectangle_collision
+# RectangleCollision
 this is a rectangle collision for python
 
 #how to install

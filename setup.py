@@ -10,7 +10,7 @@ classifiers = [
 
 setup(
   name='RectangleCollision',
-  version='0.0.0.5',
+  version='0.0.0.6',
   description='A basic collision module',
   long_description=open('desc.txt').read(),
   url='https://github.com/dark00shadow/RectangleCollision',

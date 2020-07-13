@@ -1,19 +1,27 @@
 # RectangleCollision
-this is a rectangle collision for python
+This is a rectangle collision for python
 
-#how to install
+# how to install
 
 pip install RectangleCollision
 
-#how does this work
+# how does this work
 
-if collision.rectangle(object1x, object1y, object2x,object2y,object1width,object1height,object2width,object2height):
- print('colided')#this wont work but this will shows you a "example" we have an example(the example uses pyglet)
- 
- #credits
- 
- 1.me
+Checks for collisions using boundary box detection.<br>
+If the source position is equal or greater than the destination position and it's width *(and same for y/height)*,
+then there's a collision.
 
- 2.Riley(Comrade Riley#2451)
+# Examples
+
+See [examples](examples/) for a list of examples, mainly using [Pyglet](https://github.com/pyglet/pyglet/) as graphical engine.
+
+    if collision.rectangle(object1x, object1y, object2x,object2y,object1width,object1height,object2width,object2height):
+        #this wont work but this will shows you a "example" we have an example(the example uses pyglet)
+        print('colided')
  
- i made the library and Riley(Comrade Riley#2451) gave me the method to do so
+# credits
+ 
+ 1. me
+ 2. Riley *(`Comrade Riley#2451`)*
+
+I made the library and Riley *(`Comrade Riley#2451` on Discord)* gave me the method to do so.

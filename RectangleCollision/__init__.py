@@ -1,7 +1,5 @@
 class collision():
-    def rectangle(x, y, target_x, target_y, width=32, height=32, target_width=32, target_height=32):
-        # Assuming width/height is *dangerous* since this library might give false-positives.
-        if x >= target_x and (x + width) <= (target_x + target_width):
-            if y >= target_y and (y + height) <= (target_y + target_height):
-                return True
-        return False
+    def rectangle(obj1x,obj1y,obj2x,obj2y,obj1w=32,obj1h=32,obj2w=32,obj2h=32):
+         if obj1x < obj2x + obj2w and obj1x + obj1w > obj2x and obj1y < obj2y + obj2h and obj1y + obj1h > obj2y:
+            return True
+    return False

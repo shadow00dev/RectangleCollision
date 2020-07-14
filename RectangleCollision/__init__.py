@@ -1,7 +1,10 @@
 class collision():
-    def rectangle(x, y, target_x, target_y, width=32, height=32, target_width=32, target_height=32):
 
-        if (x >= target_x and x < (target_x + target_width)) or ((x + width) >= target_x and (x + width) < (target_x + target_width)):
-            if (y >= target_y and y < (target_y + target_height)) or ((y + height) >= target_y and (y + height) < (target_y + target_height)):
-                return True
+    def rectangle(Obj1X,Obj1Y ,Obj2X,Obj2Y ,Obj1Width=32,Obj1Height=32 ,Obj2Width=32,Obj2Height=32):
+
+        if Obj1X < Obj2X + Obj2Width and Obj1X + Obj1Width > Obj2X and Obj1Y < Obj2Y + Obj2Height and Obj1Y + Obj1Height > Obj2Y:
+             return True
+
+        if Obj1X == Obj2X and Obj1Y == Obj2Y: return True
+
         return False
